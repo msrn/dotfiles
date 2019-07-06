@@ -1,0 +1,69 @@
+set encoding=utf-8                               " encoding
+set shell=/usr/bin/zsh                           " set :term to use zsh
+set errorbells                                   " Disable error bells
+set autoread                                     " File monitoring
+
+" Display
+syntax on                                        " Syntax highlight
+colorscheme molokai
+set number                                       " Line numbers
+set noshowmode                                   " Don't show current mode (for lightline plugin)
+set laststatus=2                                 " Statusline mode 2
+set showcmd                                      " Show current command chain at bottom
+set relativenumber                               " Relative line numbers for easier navigation
+filetype plugin indent on
+
+" Indentation
+set autoindent                                   " Indent automatically
+set smartindent                                  " For C-like syntax
+set tabstop=2                                    " Spaces shown when tab pressed
+set shiftwidth=4                                 " Indent with <> in spaces
+set expandtab                                    " Turn tab to space
+
+" Control
+set mouse=a                                      " Full mouse support
+set wildmenu                                     " Enable menu at bottom
+set wildignorecase                               " Case insensitive op in wildmenu
+set wildmode=list:longest,full                   " Completion with tab in wildmenu 
+
+" Shortcuts
+
+      " Move in split view with CTRl+H,J,K,L
+      nnoremap <C-J> <C-W><C-J>
+      nnoremap <C-K> <C-W><C-K>
+      nnoremap <C-L> <C-W><C-L>
+      nnoremap <C-H> <C-W><C-H>
+
+
+" Directories
+set backupdir=~/.vim/.backup//                   " Backup dir
+set directory=~/.vim/.backup/swap//              " Swap dir
+set undodir=~/.vim/.backup/undo//                " Undo dir
+set undofile                                     " Enable undo history
+
+" Search
+set incsearch                                    " Incremental search
+set ignorecase                                   " Case insensitive search by default
+set smartcase                                    " Case insens search with lowers
+set hlsearch                                     " Highlight search
+set showmatch                                    " Corresponding matches
+
+" Plugins
+call plug#begin('~/.vim/plugs')                  " Load Vim-Plugs
+
+Plug 'itchyny/lightline.vim'                     " Lightline from Github
+Plug 'itchyny/vim-gitbranch'                     " Gitbranch from lightline
+
+call plug#end()                                  " Init plugins
+
+" Lightline 
+let g:lightline = {
+    \ 'colorscheme': 'powerline',
+    \ 'active': {
+    \   'left': [ [ 'mode', 'paste' ],
+    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+    \ },
+    \ 'component_function': {
+    \   'gitbranch': 'gitbranch#name'
+    \ },
+    \ }
