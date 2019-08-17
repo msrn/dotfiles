@@ -56,7 +56,7 @@ Plug 'itchyny/vim-gitbranch'                     " Gitbranch from lightline
 
 call plug#end()                                  " Init plugins
 
-" Lightline 
+" Lightline joo joo
 let g:lightline = {
     \ 'colorscheme': 'powerline',
     \ 'active': {
