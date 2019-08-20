@@ -3,18 +3,22 @@ RightButton;NoModifier=org.kde.latte.contextmenu
 
 [Containments][1]
 activityId=
+byPassWM=false
 dockWindowBehavior=true
 enableKWinEdges=true
 formfactor=2
 immutability=1
+isPreferredForShortcuts=false
 lastScreen=10
 location=4
 onPrimary=true
 plugin=org.kde.latte.containment
 raiseOnActivityChange=false
 raiseOnDesktopChange=false
+settingsComplexity=4
 timerHide=700
 timerShow=200
+viewType=0
 visibility=1
 wallpaperplugin=org.kde.image
 
@@ -51,8 +55,8 @@ plugin=org.kde.plasma.trash
 PreloadWeight=0
 
 [Containments][1][ConfigDialog]
-DialogHeight=698
-DialogWidth=601
+DialogHeight=934
+DialogWidth=539
 
 [Containments][1][Configuration]
 PreloadWeight=0
@@ -60,10 +64,13 @@ PreloadWeight=0
 [Containments][1][General]
 activeIndicatorType=DotIndicator
 advanced=true
-appletOrder=5;12;9;7
+appletOrder=5;9;7
+hoverAction=PreviewWindows
 iconMargin=10
+iconSize=62
 launchersGroup=Layout
-panelSize=5
+maxLength=80
+panelSize=2
 shadowOpacity=60
 shadowSize=45
 shadows=All
@@ -71,7 +78,15 @@ showGlow=true
 showOnlyCurrentScreen=true
 showToolTips=true
 showWindowActions=true
-zoomLevel=9
+thickMargin=5
+zoomLevel=5
+
+[Containments][1][Indicator]
+customType=
+enabled=true
+enabledForApplets=true
+padding=0.07999999821186066
+type=org.kde.latte.default
 
 [Containments][13]
 activityId=
