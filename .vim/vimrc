@@ -19,7 +19,7 @@ set smartindent                                  " For C-like syntax
 set tabstop=2                                    " Spaces shown when tab pressed
 set shiftwidth=4                                 " Indent with <> in spaces
 set expandtab                                    " Turn tab to space
-
+set wrap linebreak nolist
 " Control
 set mouse=a                                      " Full mouse support
 set wildmenu                                     " Enable menu at bottom
@@ -56,7 +56,7 @@ Plug 'itchyny/vim-gitbranch'                     " Gitbranch from lightline
 
 call plug#end()                                  " Init plugins
 
-" Lightline
+" Lightlien
 let g:lightline = {
     \ 'colorscheme': 'powerline',
     \ 'active': {
