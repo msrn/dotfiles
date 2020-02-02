@@ -16,8 +16,8 @@ plugin=org.kde.latte.containment
 raiseOnActivityChange=false
 raiseOnDesktopChange=false
 settingsComplexity=4
-timerHide=700
-timerShow=700
+timerHide=400
+timerShow=200
 viewType=0
 visibility=2
 wallpaperplugin=org.kde.image
@@ -28,6 +28,33 @@ plugin=audoban.applet.separator
 
 [Containments][1][Applets][12][Configuration]
 PreloadWeight=0
+
+[Containments][1][Applets][17]
+activityId=
+formfactor=0
+immutability=1
+lastScreen=-1
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=
+
+[Containments][1][Applets][17][Configuration]
+PreloadWeight=0
+activityId=
+formfactor=0
+immutability=1
+lastScreen=-1
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=
+
+[Containments][1][Applets][17][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][1][Applets][17][Configuration][General]
+arrangement=1
+url=file:///home/mikael
 
 [Containments][1][Applets][5]
 immutability=1
@@ -59,7 +86,7 @@ plugin=org.kde.plasma.trash
 PreloadWeight=0
 
 [Containments][1][ConfigDialog]
-DialogHeight=934
+DialogHeight=905
 DialogWidth=539
 
 [Containments][1][Configuration]
@@ -68,31 +95,42 @@ PreloadWeight=0
 [Containments][1][General]
 activeIndicatorType=DotIndicator
 advanced=true
-appletOrder=5;9;7
-durationTime=x1
+appletOrder=5;17;9;7
 hoverAction=PreviewWindows
 iconMargin=10
-iconSize=62
+iconSize=51
+inConfigureAppletsMode=true
 launchersGroup=Layout
-maxLength=94
-panelSize=5
+lengthExtMargin=3
+maxLength=74
+panelSize=26
+panelTransparency=50
+proportionIconSize=8.5
 shadowOpacity=60
 shadowSize=45
-shadows=All
 showGlow=true
 showOnlyCurrentDesktop=true
 showOnlyCurrentScreen=true
 showToolTips=true
 showWindowActions=true
-thickMargin=5
-zoomLevel=5
+splitterPosition=1
+splitterPosition2=2
+thickMargin=4
+zoomLevel=8
 
 [Containments][1][Indicator]
-customType=
+customType=org.kde.latte.dashtopanel
 enabled=true
 enabledForApplets=true
-padding=0.07999999821186066
-type=org.kde.latte.default
+padding=0.12999999523162842
+type=org.kde.latte.dashtopanel
+
+[Containments][1][Indicator][org.kde.latte.dashtopanel][General]
+lineThickness=0.05
+maxBackgroundOpacity=0.2
+
+[Containments][1][Indicator][org.kde.latte.win7][General]
+appletPadding=0.05
 
 [Containments][13]
 activityId=
@@ -153,7 +191,7 @@ background=
 color=blue
 disableBordersForMaximizedWindows=false
 lastUsedActivity=1f4ada58-f699-4cb2-b339-a34cfc120cfb
-launchers=applications:firefox.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.konsole.desktop,applications:org.keepassxc.KeePassXC.desktop,applications:gvim.desktop,applications:thunderbird.desktop,applications:riot.desktop,applications:systemsettings.desktop,applications:org.kde.kate.desktop,applications:org.gnome.Calculator.desktop,applications:jetbrains-idea.desktop,applications:joplin.desktop,applications:whatsapp-nativefier.desktop,applications:telegramdesktop.desktop,applications:spotify.desktop
+launchers=applications:firefox.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.konsole.desktop,applications:org.keepassxc.KeePassXC.desktop,applications:gvim.desktop,applications:thunderbird.desktop,applications:riot.desktop,applications:systemsettings.desktop,applications:org.kde.kate.desktop,applications:org.gnome.Calculator.desktop,applications:jetbrains-idea.desktop,applications:joplin.desktop
 preferredForShortcutsTouched=false
 showInMenu=true
 textColor=fcfcfc

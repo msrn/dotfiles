@@ -102,3 +102,4 @@ alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias dotz='/usr/bin/git --git-dir=$HOME/.my-cfg/ --work-tree=$HOME'
+alias mouse='sudo modprobe -r psmouse && sudo modprobe psmouse' 
