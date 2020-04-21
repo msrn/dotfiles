@@ -1,8 +1,12 @@
 set encoding=utf-8                               " encoding
 set shell=/usr/bin/zsh                           " set :term to use zsh
 set errorbells                                   " Disable error bells
+if has ("gui_running")
+    if has("x11")
+        set guifont=Source\ Code\ Pro\ Semi-Bold
+    endif
+endif
 set autoread                                     " File monitoring
-
 " Display
 syntax on                                        " Syntax highlight
 colorscheme molokai
