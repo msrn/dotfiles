@@ -104,7 +104,4 @@ alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias dotz='/usr/bin/git --git-dir=$HOME/.my-cfg/ --work-tree=$HOME'
-<<<<<<< HEAD
 alias onedrive-log='journalctl --user-unit onedrive -f'
-=======
->>>>>>> 21d8d7f5351c724aa6251098d84369c9cdf5c239
