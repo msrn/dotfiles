@@ -85,7 +85,10 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
+## environment
 
+export PATH=$PATH:~/.local/bin
+export EDITOR=/usr/bin/vim
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -97,9 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias update='sudo pacman -Suuy'
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias dotz='/usr/bin/git --git-dir=$HOME/.my-cfg/ --work-tree=$HOME'
-alias mouse='sudo modprobe -r psmouse && sudo modprobe psmouse' 
+alias onedrive-log='journalctl --user-unit onedrive -f'
