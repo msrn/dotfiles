@@ -31,6 +31,7 @@ set wildignorecase                               " Case insensitive op in wildme
 set wildmode=list:longest,full                   " Completion with tab in wildmenu 
 
 " Shortcuts
+inoremap jj <ESC>
 
       " Move in split view with CTRl+H,J,K,L
       nnoremap <C-J> <C-W><C-J>
@@ -57,6 +58,7 @@ call plug#begin('~/.vim/plugs')                  " Load Vim-Plugs
 
 Plug 'itchyny/lightline.vim'                     " Lightline from Github
 Plug 'itchyny/vim-gitbranch'                     " Gitbranch from lightline
+Plug 'tpope/vim-fugitive'                        " Git wrapper from Github
 
 call plug#end()                                  " Init plugins
 
